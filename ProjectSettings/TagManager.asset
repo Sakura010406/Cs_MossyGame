@@ -7,11 +7,12 @@ TagManager:
   - Plants
   - Enemy
   - Attack
+  - BottomAirWall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boundary
   - Water
   - UI
   - Ground
