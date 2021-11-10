@@ -15,8 +15,8 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //HealthBar.healthMax = health;
-        //HealthBar.healthCurrent = health;
+        HealthBar.healthMax = health;
+        HealthBar.healthCurrent = health;
         sr = GetComponent<SpriteRenderer>();
     }
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
         StartCoroutine(IsAttackCo());
         health -= damage;
         Debug.Log(health);
-        //HealthBar.healthCurrent = health;
+        HealthBar.healthCurrent = health;
         HurtShader();
         if (health <= 0)
         {
