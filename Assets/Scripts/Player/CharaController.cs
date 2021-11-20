@@ -18,7 +18,7 @@ public class CharaController : MonoBehaviour
     [SerializeField]
     private bool fall = false;
     [SerializeField]
-    private  int plant;
+    public int plant;
     [SerializeField]
     private LayerMask ground;
     [SerializeField]
@@ -59,7 +59,7 @@ public class CharaController : MonoBehaviour
         {
             fall = true;
         }
-        
+        plantNum.text = plant.ToString();
     }
   
     void MoveMent()
@@ -101,9 +101,10 @@ public class CharaController : MonoBehaviour
     {
         if (collision.tag == "Plants")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
+            collision.gameObject.GetComponent<Plant>().isCollected = true;
             plant++;
-            plantNum.text = plant.ToString();
+            
         }
     }
     

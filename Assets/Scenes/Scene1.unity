@@ -11605,9 +11605,9 @@ MonoBehaviour:
   deathAudio: {fileID: 0}
   maxHp: 3
   hp: 0
-  hurtTime: 0.2
   isAttacked: 0
   damage: 1
+  isDead: 0
   speed: 3
   waitTime: 0.6
   movePos:
@@ -11759,9 +11759,9 @@ MonoBehaviour:
   deathAudio: {fileID: 0}
   maxHp: 3
   hp: 0
-  hurtTime: 0.2
   isAttacked: 0
   damage: 1
+  isDead: 0
   speed: 3
   waitTime: 0.6
   movePos:
@@ -11999,6 +11999,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acbbd5ae43daf374da8c966718cd52ba, type: 3}
+--- !u!1 &522532597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522532599}
+  - component: {fileID: 522532598}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &522532598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522532597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8caabe994d2c1488ae2b99a712812e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLoad: 0
+--- !u!4 &522532599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522532597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.532207, y: 5.9089427, z: -2.9204254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525756072
 GameObject:
   m_ObjectHideFlags: 0
@@ -12175,9 +12219,9 @@ MonoBehaviour:
   deathAudio: {fileID: 0}
   maxHp: 3
   hp: 0
-  hurtTime: 0.2
   isAttacked: 0
   damage: 1
+  isDead: 0
   speed: 2
   waitTime: 0.6
   movePos:
@@ -12264,6 +12308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 7424959359292666125, guid: bdc2e7be343632c4a8e847a043113d15, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bdc2e7be343632c4a8e847a043113d15, type: 3}
 --- !u!4 &660330514 stripped
 Transform:
@@ -12337,7 +12382,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1073395579002261957, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
 --- !u!1 &684352034
 GameObject:
@@ -13903,9 +13949,9 @@ MonoBehaviour:
   deathAudio: {fileID: 0}
   maxHp: 3
   hp: 0
-  hurtTime: 0.2
   isAttacked: 0
   damage: 1
+  isDead: 0
   speed: 2
   waitTime: 0.6
   movePos:
@@ -14324,7 +14370,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1073395579002261957, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
 --- !u!1001 &1339628861
 PrefabInstance:
@@ -14336,11 +14383,11 @@ PrefabInstance:
     - target: {fileID: 1260603051, guid: af1c31f7d72a3cd48865f7f7179616ac, type: 3}
       propertyPath: movePos.Array.data[0]
       value: 
-      objectReference: {fileID: 129263322}
+      objectReference: {fileID: 512353395}
     - target: {fileID: 1260603051, guid: af1c31f7d72a3cd48865f7f7179616ac, type: 3}
       propertyPath: movePos.Array.data[1]
       value: 
-      objectReference: {fileID: 1897443436}
+      objectReference: {fileID: 1001055048}
     - target: {fileID: 1896654113209733684, guid: af1c31f7d72a3cd48865f7f7179616ac, type: 3}
       propertyPath: m_Name
       value: Poison (2)
@@ -14633,7 +14680,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1073395579002261957, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
 --- !u!1 &1496601417 stripped
 GameObject:
@@ -14698,9 +14746,9 @@ MonoBehaviour:
   deathAudio: {fileID: 0}
   maxHp: 3
   hp: 0
-  hurtTime: 0.2
   isAttacked: 0
   damage: 1
+  isDead: 0
   speed: 3
   waitTime: 0.6
   movePos:
@@ -40868,6 +40916,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 1598414327781709111, guid: bdc2e7be343632c4a8e847a043113d15, type: 3}
+    - {fileID: 7424959359292666125, guid: bdc2e7be343632c4a8e847a043113d15, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bdc2e7be343632c4a8e847a043113d15, type: 3}
 --- !u!1 &1897443435
 GameObject:
@@ -41282,11 +41331,11 @@ PrefabInstance:
     - target: {fileID: 1260603051, guid: af1c31f7d72a3cd48865f7f7179616ac, type: 3}
       propertyPath: movePos.Array.data[0]
       value: 
-      objectReference: {fileID: 512353395}
+      objectReference: {fileID: 129263322}
     - target: {fileID: 1260603051, guid: af1c31f7d72a3cd48865f7f7179616ac, type: 3}
       propertyPath: movePos.Array.data[1]
       value: 
-      objectReference: {fileID: 1001055048}
+      objectReference: {fileID: 1897443436}
     - target: {fileID: 1896654113209733684, guid: af1c31f7d72a3cd48865f7f7179616ac, type: 3}
       propertyPath: m_Name
       value: Poison (1)
@@ -41525,7 +41574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142864316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.196285, y: 4.08, z: -10}
+  m_LocalPosition: {x: -17.956284, y: 4.71, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 834077785}
@@ -41807,7 +41856,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1073395579002261957, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b2daa5f8ab8c884c8d67df8f225d0c8, type: 3}
 --- !u!1001 &6681770167639145959
 PrefabInstance:
@@ -41824,6 +41874,10 @@ PrefabInstance:
       propertyPath: hurtTime
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1748043635, guid: 2eaad27c6a277a649827be1597a15704, type: 3}
+      propertyPath: MaxDistance
+      value: 1.9615617
+      objectReference: {fileID: 0}
     - target: {fileID: 6681770167504390840, guid: 2eaad27c6a277a649827be1597a15704, type: 3}
       propertyPath: plantNum
       value: 
@@ -41838,11 +41892,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6681770167504390841, guid: 2eaad27c6a277a649827be1597a15704, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.87
+      value: -27.63
       objectReference: {fileID: 0}
     - target: {fileID: 6681770167504390841, guid: 2eaad27c6a277a649827be1597a15704, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.55
+      value: 4.18
       objectReference: {fileID: 0}
     - target: {fileID: 6681770167504390841, guid: 2eaad27c6a277a649827be1597a15704, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41958,9 +42012,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 536864699, guid: fa06bf5aa649fd24cbe5ead0dd5c527b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 593688553, guid: fa06bf5aa649fd24cbe5ead0dd5c527b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 832802036, guid: fa06bf5aa649fd24cbe5ead0dd5c527b, type: 3}
       propertyPath: m_IsActive

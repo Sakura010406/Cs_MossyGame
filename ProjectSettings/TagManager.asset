@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Attack
   - BottomAirWall
+  - LoadSave
   layers:
   - Default
   - TransparentFX

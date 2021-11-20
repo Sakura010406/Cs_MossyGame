@@ -16,6 +16,7 @@ public class Enemy_Poison :Enemy
     // Start is called before the first frame update
     void Start()
     {
+        hurtTime = 0.2f;
         base.Start();
         i = 1;
     }

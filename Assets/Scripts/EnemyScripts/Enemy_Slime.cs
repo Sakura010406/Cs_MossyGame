@@ -17,6 +17,7 @@ public class Enemy_Slime : Enemy
     void Start()
     {
         base.Start();
+        hurtTime = 0.2f;
         i = 1;
     }
 
